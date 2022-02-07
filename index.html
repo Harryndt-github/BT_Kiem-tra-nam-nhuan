@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devece-width, initial-scale=1">
+        <title>Kiem tra nam nhuan</title>
+    </head>
+    <body>
+        <script>
+            let year = +(prompt("Nhap nam can kiem tra"));
+            let isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+
+            if (isLeapYear) {
+                alert(`${year} la nam nhuan`);
+            } else {
+                alert(`${year} khong phai nam nhuan`);
+            }
+        </script>
+    </body>
+
+</html>
